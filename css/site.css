@@ -1,0 +1,57 @@
+.logo-afb{
+    width: auto;
+    height: 150px;
+}
+.nav-btn{
+    margin-left: 15%;
+    margin-top: -5%;
+}
+.button{
+    padding: 0.7%;
+}
+.home-btn{
+    margin-left: 6%;
+}
+.over-btn{
+    margin-left: 6%;
+}
+.wordt-btn{
+    margin-left: 6%;
+}
+.contact-btn{
+    margin-left: 6%;
+}
+.aanmelden-btn{
+    margin-left: 22%;
+}
+.inlog-btn{
+    margin-left: 6%;
+}
+.main{
+    
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+.hoofd-info{
+    font-size: 35px;
+}
+.klein-info{
+    font-size: 23px;
+    margin-top: 0.3%;
+}
+.normaal-info{
+    font-size:17px;
+    margin-top: 0.3%;
+}
+.fotoslider{
+    margin-left: 50%;
+    width: auto;
+    height: 40%;
+    margin-top: -5%;
+}
+.kleur-main{
+    background-color: blue;
+    width: auto;
+    height: auto;
+}

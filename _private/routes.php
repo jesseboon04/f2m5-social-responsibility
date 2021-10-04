@@ -12,6 +12,10 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	// Lees de docs, daar zie je hoe je routes kunt maken: https://github.com/skipperbent/simple-php-router#routes
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
+	SimpleRouter::get( '/admin', 'WebsiteController@admin' )->name( 'admin' );
+	SimpleRouter::get( '/forms', 'WebsiteController@forms' )->name( 'forms' );
+	SimpleRouter::post( '/forms/verwerken', 'WebsiteController@verwerkenregistratie' )->name( 'verwerktregistratie' );
+	SimpleRouter::get( '/blog', 'WebsiteController@blog' )->name( 'blog' );
 
 
 
@@ -22,6 +26,8 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 		return '404 Page not Found';
 	} );
+	
+	
 
 } );
 
