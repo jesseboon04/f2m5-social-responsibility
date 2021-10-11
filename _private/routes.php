@@ -16,6 +16,7 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/forms', 'WebsiteController@forms' )->name( 'forms' );
 	SimpleRouter::post( '/forms/verwerken', 'WebsiteController@verwerkenregistratie' )->name( 'verwerktregistratie' );
 	SimpleRouter::get( '/blog', 'WebsiteController@blog' )->name( 'blog' );
+	SimpleRouter::get( '/contact', 'WebsiteController@contact' )->name( 'contact' );
 
 
 

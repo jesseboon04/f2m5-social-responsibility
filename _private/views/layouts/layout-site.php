@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="<?php echo site_url( '/css/site.css' ) ?>" media="all">
     <link rel="stylesheet" href="<?php echo site_url( '/css/site.css' ) ?>" media="all">
 </head>
-<body>
+<body id="site-grid">
     <nav class="navigatie">
         <img src="LogoTransformers.png" alt="" class="logo-afb">
     <section class="nav-btn">

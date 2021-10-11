@@ -1,0 +1,80 @@
+@media only screen and (max-width: 900px) {
+   #contact-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav"
+                         "tekst-info1"
+                         "tekst-info2"
+                         "footer";
+   }
+
+    .logo-afb{
+    grid-area: nav;
+    width: auto;
+    height: 150px;
+    }
+    .nav-btn{
+        grid-area: nav;
+        margin-left: 15%;
+        margin-top: -9%;
+    }
+    .button{
+        
+        padding: 0.7%;
+    }
+    .home-btn{
+        margin-left: 6%;
+    }
+    .over-btn{
+     margin-left: 3%;
+    }
+    .wordt-btn{
+      margin-left: 3%;
+    }
+    .contact-btn{
+        margin-left: 3%;
+    }
+   .aanmelden-btn{
+        margin-left: 10%;
+    }
+    .inlog-btn{
+         margin-left: 3%;
+    }
+    .tekst-contact{
+     margin-top: 7%;
+     font-size: 30px;
+     
+     
+    }
+    .tekst-contact2{
+        margin-top: 7%;
+        font-size: 30px;
+        
+       }
+    .btn-mail{
+
+    }
+    .footer{
+        background-color: orangered;
+    }
+    .footertekst1{
+        font-size: 30px;
+        color: white;
+    }
+    .titeltekst1{
+        font-size: 50px;
+    }
+    .afbeelding-logo{
+        width: 6%;
+        height: auto;
+    }
+    .footertekst3{
+        font-size: 30px;
+        
+    }
+}
+@media screen and (min-width: 901px){
+        #contact-grid{
+            
+        }
+}
