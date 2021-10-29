@@ -15,8 +15,11 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 	SimpleRouter::get( '/admin', 'WebsiteController@admin' )->name( 'admin' );
 	SimpleRouter::get( '/forms', 'WebsiteController@forms' )->name( 'forms' );
 	SimpleRouter::post( '/forms/verwerken', 'WebsiteController@verwerkenregistratie' )->name( 'verwerktregistratie' );
+	SimpleRouter::get( '/forms/bedankt', 'WebsiteController@bedankpagina' )->name( 'bedanktpage' );
 	SimpleRouter::get( '/blog', 'WebsiteController@blog' )->name( 'blog' );
 	SimpleRouter::get( '/contact', 'WebsiteController@contact' )->name( 'contact' );
+	
+
 
 
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="<?php echo site_url( '/css/contact.css' ) ?>" media="all">
 </head>
 <body id="contact-grid">
-<nav class="navigatie">
+<nav class="navigatie" id="nav">
         <img src="LogoTransformers.png" alt="" class="logo-afb">
     <section class="nav-btn">
         <button class="home-btn button">Home</button>
@@ -18,12 +18,13 @@
         <button class="aanmelden-btn button">Aanmelden</button>
         <button class="inlog-btn button">Inloggen</button>
     </section> 
-    <main>
+</nav>
+    <main id="main">
         <div class="tekst-contact">
-            <p>Vragen?<br>
-            Samenwerken?<br>
-            Iets anders?<br>
-            Mail ons!</p>
+            <p class="tekst-vragen">Vragen?</p>
+            <p class="tekst-vragen"></p>Samenwerken?</p>
+            <p class="tekst-vragen">Iets anders?</p>
+            <p class="tekst-vragen">Mail ons!</p>
             <img src="../afbeeldingen/image(3).png" alt="">
         </div> 
         <div class="tekst-contact2">
@@ -32,12 +33,12 @@
             we komen graag met je in contact!<br>
             Samen leren en elkaar versterken staat bij ons centraal. <br>Heb jij een idee of vraag voor de Transformers Community? <br>
             Zou je graag willen samenwerken?<br>
-            Of ben je gewoon benieuwd wat wij zoal doen? 
+            Of ben je gewoon benieuwd wat wij zoal doen? <br>
             Neem gerust contact met ons op,dat vinden we leuk! <br>Je kan je mail richten aan Iris, de oprichter.<br>
             <button class="btn-mail button">Mail ons</button>
         </div>   
     </main>
-    <footer>
+    <footer id="footer">
     <div class="footertekst1 footer">
         <p class="titeltekst1">Transformers<br>
             Community
@@ -54,7 +55,7 @@
         <img src="images/facebook-afb.png" alt="" class="afbeelding-logo">
         </a>
         <a href="https://www.linkedin.com/company/transformerscommunity">
-        <img src="images/linkedin-afb.png" alt="" class="afbeelding-logo">
+        <img src="images/linkedin-foto.jpeg" alt="" class="afbeelding-logo">
         </a>
         <a href="https://www.youtube.com/channel/UCvN0_IYGVy6s1jFj2enGIsw">
         <img src="images/youtube-afb.png" alt="" class="afbeelding-logo">
@@ -66,15 +67,15 @@
                 <label for="email">Email:</label><br>
                 <input type="email" name="email" value="" class="form-control" id="email" aria-describedat="emailhelp"> 
                 <small id="emailhelp" class="form-text text-muted" >Hier u mail</small>
-                <button class="button">Aanmelden</button>
+                <button class="button btn-aanmelden">Aanmelden</button>
             </div>
         </p>
         </div>
-        <section class="footer-btn">
-            <button class="button">Home</button>
-            <button class=" button">Over ons</button>
-            <button class=" button">Wordt Transformer</button>
-            <button class=" button">Contact</button>
+        <section class="footer-button">
+            <button class="button footer-btn">Home</button>
+            <button class=" button footer-btn">Over ons</button>
+            <button class=" button footer-btn">Wordt Transformer</button>
+            <button class=" button footer-btn">Contact</button>
         </section> 
     </div>
     

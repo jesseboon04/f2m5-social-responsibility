@@ -40,12 +40,12 @@ class WebsiteController
 		$email = filter_var( $_POST['email'], FILTER_VALIDATE_EMAIL );
 		$wachtwoord = trim( $_POST['wachtwoord']);
 
-		if ( $email === false) {
+		if ( $email === false) { 
 			$errors['email'] = 'Geen geldig email adress ingevuld';
 		
 		}
 		if ( strlen($wachtwoord) < 6){
-			$errors['email'] = 'Geen geldig wachtwoord(minmaal 6 tekens)';
+			$errors['wachtwoord'] = 'Geen geldig wachtwoord(minmaal 6 tekens)';
 			 
 		}
 		if (count( $errors) === 0 ){
@@ -53,13 +53,42 @@ class WebsiteController
 
 			//checken of de gebruiker al bestaat
 			$connection = dbConnect();
-			$sql        = "SELCT * FROM `gebruikersz WHERE `email` ";
+			$sql        = "SELECT * FROM `gebruikers` WHERE `email` =:email";
 			$statement = $connection->prepare( $sql);
 			$statement->execute( ['email' => $email] );
+
+			if ($statement->rowCount() ===0){
+				//als die erniet is dan verder met opslaan
+				$sql 		= "INSERT INTO `gebruikers` (`email` , `wachtwoord`) VALUES (:email, :wachtwoord)";
+				$statement  = $connection->prepare( $sql);
+				$safe_password = password_hash( $wachtwoord, PASSWORD_DEFAULT);
+				$params 	=[
+					'email' 	=> $email,
+					'wachtwoord' => $safe_password
+				];
+				$statement->execute ($params);
+				// doorstuern naar bedankt pagina
+				$bedanktUrl = url('bedanktpage');
+				redirect($bedanktUrl);
+				// alles hierna wordt niet meer uitgevoerd
+
+			}else {
+				//anders fout melding tonen
+				$errors['email'] = 'Dit account bestaat al';
+			}
+			
+
+			
 
 			// als die er niet is, dan verder met oplsaan
 			// anders fout melding tonen 
 		}
+		$template_engine = get_template_engine();
+		echo $template_engine->render( 'forms',['errors' => $errors]);
+	}
+	public function bedankpagina(){
+		$template_engine = get_template_engine();
+		echo $template_engine->render("bedankt");
 	}
 	public function blog()
 	{
@@ -67,11 +96,14 @@ class WebsiteController
 		$template_engine = get_template_engine();
 		echo $template_engine->render('blog');
 		
-	}public function contact()
+	
+	}
+	public function contact()
 	{
 
 		$template_engine = get_template_engine();
 		echo $template_engine->render('contact');
 		
 	}
+	
 }
