@@ -90,6 +90,11 @@ class WebsiteController
 		$template_engine = get_template_engine();
 		echo $template_engine->render("bedankt");
 	}
+	public function overons(){
+		$template_engine = get_template_engine();
+		echo $template_engine->render("overons");
+		
+	}
 	public function blog()
 	{
 
@@ -98,6 +103,14 @@ class WebsiteController
 		
 	
 	}
+	public function topics()
+	{
+		
+		$topics = getallTopics();
+		$template_engine = get_template_engine();
+		echo $template_engine->render('topics',['topics' =>$topics]);
+	}
+	
 	public function contact()
 	{
 
@@ -105,5 +118,25 @@ class WebsiteController
 		echo $template_engine->render('contact');
 		
 	}
+	public function new()
+	{
+
+		$template_engine = get_template_engine();
+		echo $template_engine->render('new');
+		
+	}
+	public function save()
+	{
+		$result = validateTopicdata($_POST);
+		if (count($result['errors'])=== 0 ){
+			// oplsaan topic
+			createTopic($result['data']['title'], $result['data']['desc']);
+			redirect(url('topics'));
+		}
+		$template_engine = get_template_engine();
+		echo $template_engine->render('topics/new', ['errors' => $result['errors'] ]); 
+		
+	}
+	
 	
 }

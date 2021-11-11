@@ -1,6 +1,6 @@
 <?php $this->layout("layouts::website")?>
 
-<h2>HTML Forms</h2>
+<h2>Registreren</h2>
 
 <form action="<?php echo url('verwerktregistratie')?>" method="POST">
     <div class ="form-group">

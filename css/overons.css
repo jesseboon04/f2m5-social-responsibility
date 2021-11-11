@@ -1,0 +1,148 @@
+
+
+.navigatie{
+    margin-top: 0%;
+}
+.logo-afb{
+    height: 120px;
+    width: auto;
+}.nav-btn{
+    margin-left: 15%;
+    margin-top: -5%; 
+}
+.button{
+
+    font-family: Arial, Helvetica, sans-serif ;
+    border:0px;
+    background-color: transparent;
+    padding: 0.7%;
+    font-size: 15px;
+}
+.home-btn{
+    margin-left: 5%;
+}
+.over-btn{
+ margin-left: 5%;
+}
+.wordt-btn{
+  margin-left: 5%;
+}
+.contact-btn{
+    margin-left: 5%;
+}
+.aanmelden-btn{
+   color: white;
+ background-color: orangered;
+   border: 1px solid orangered;
+    margin-left: 20%;
+    border-radius: 12px;
+}
+.inlog-btn{
+    color: white;
+     border: 1px solid orangered;
+     margin-left: 8%;
+     background-color: orangered;
+     border-radius: 12px;
+}main{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.titel-links{
+    font-size: 50px;
+}
+.tekst-links{
+    font-size: 20px;
+
+}
+.tekst-rechts{
+    margin-left: 40%;
+    margin-top: -23%;
+    font-size: 20px;
+}
+.titel-rechts{
+    font-size: 30px;
+}
+.tekst1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.persoonlinks{
+    margin-left: 10%;
+    
+    
+}
+.naamp{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+.tekst-functie{
+    margin-left: 9%;
+}
+.info-tekstp{
+    font-size: 17px;
+    text-align: center;
+    margin-left: -75%;
+    
+}
+.persoonrechts{
+    margin-left: 60%;
+    margin-top: -43%;
+}
+.naamp1{
+    margin-left: 3%;
+}
+.footer{
+    background-color: orangered;
+    width: 100%;
+    height: 100%;
+    
+}
+.footertekst1{
+    margin-left: 2%;
+    font-size: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.titeltekst1{
+    font-size: 10px;
+}
+.afbeelding-logo{
+    width: 3%;
+    height: auto;
+    
+}
+.footertekst3{
+    font-size: 10px;
+    
+}
+.btn-aanmelden{       
+    color: white;
+    font-size: 10px;
+    
+}
+.footer-btn{
+    font-size: 10px;
+    color: white;
+}
+.form-control{
+    height: 10px;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

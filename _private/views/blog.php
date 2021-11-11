@@ -1,1 +1,1 @@
-<?php echo'test'; ?>
+<?php $this->layout("layouts::website")?>

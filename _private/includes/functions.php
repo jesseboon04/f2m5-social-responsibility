@@ -86,3 +86,28 @@ function current_route_is( $name ) {
 	return false;
 
 }
+function validateTopicdata($data){
+	$errors = [];
+		$title = trim($data['title']);
+		$desc = trim($data['desc']);
+
+		
+		if ( empty($title)) { 
+			$errors['title'] = 'vul een titel in';
+		
+		}
+		if ( empty($desc)){ 
+			$errors['desc'] = 'Vul de discription';
+			 
+		}
+		$data = [
+			'title' => $title,
+			'desc' => $desc
+		];
+		$result = [
+			'data' => $data,
+			'errors' => $errors
+		];
+
+		return $result;
+}

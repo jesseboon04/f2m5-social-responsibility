@@ -88,6 +88,7 @@
         font-size: 30px;
         color: white;
         font-family: Arial, Helvetica, sans-serif ;
+        
     }
     .titeltekst1{
         font-size: 50px;
@@ -205,33 +206,33 @@
             background-color: orangered;
         }
         .footertekst1{
-            font-size: 30px;
+            font-size: 10px;
             color: white;
             font-family: Arial, Helvetica, sans-serif ;
         }
         .titeltekst1{
-            font-size: 50px;
+            font-size: 10px;
         }
         .afbeelding-logo{
-            width: 6%;
+            width: 3%;
             height: auto;
             
         }
         .footertekst3{
-            font-size: 30px;
+            font-size: 10px;
             
         }
         .btn-aanmelden{       
             color: white;
-            font-size: 25px;
+            font-size: 10px;
             
         }
         .footer-btn{
-            font-size: 20px;
+            font-size: 10px;
             color: white;
         }
         .form-control{
-            height: 30px;
+            height: 10px;
             width: 30%;
         }
 

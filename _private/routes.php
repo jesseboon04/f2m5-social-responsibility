@@ -13,11 +13,16 @@ SimpleRouter::group( [ 'prefix' => site_url() ], function () {
 
 	SimpleRouter::get( '/', 'WebsiteController@home' )->name( 'home' );
 	SimpleRouter::get( '/admin', 'WebsiteController@admin' )->name( 'admin' );
+	SimpleRouter::get( '/overons', 'WebsiteController@overons' )->name( 'overons' );
 	SimpleRouter::get( '/forms', 'WebsiteController@forms' )->name( 'forms' );
 	SimpleRouter::post( '/forms/verwerken', 'WebsiteController@verwerkenregistratie' )->name( 'verwerktregistratie' );
 	SimpleRouter::get( '/forms/bedankt', 'WebsiteController@bedankpagina' )->name( 'bedanktpage' );
 	SimpleRouter::get( '/blog', 'WebsiteController@blog' )->name( 'blog' );
+	SimpleRouter::get( '/topics', 'WebsiteController@topics' )->name( 'topics' );
+	SimpleRouter::get( '/topics/new', 'WebsiteController@new' )->name( 'new' );
+	SimpleRouter::post( '/topics/new', 'WebsiteController@save' )->name( 'save' );
 	SimpleRouter::get( '/contact', 'WebsiteController@contact' )->name( 'contact' );
+	
 	
 
 
